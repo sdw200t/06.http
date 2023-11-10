@@ -1,0 +1,121 @@
+.timezones {
+  display: flex;
+  flex-direction: column;
+  background: #34d4f0;
+  width: 467px;
+  border-radius: 40px;
+  margin: 50px;
+  padding: 25px;
+}
+
+.timezones__watchform {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  border: 1px solid #000a2c;
+  padding: 25px;
+}
+
+.timezones__watchform input {
+  width: 100px;
+  padding: 5px 10px;
+}
+
+.timezones__watchform label:nth-child(n + 1) {
+  margin-right: 20px;
+}
+
+.timezones__watchform button {
+  padding: 10px;
+  background-color: rgb(135, 160, 95);
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 1px slategray;
+  cursor: pointer;
+}
+
+.timezones__watchcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.timezones__watchdelete {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.timezones__watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.timezones__watch__clock {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 2px solid #345c00;
+  border-radius: 50%;
+  margin-top: 8px;
+  background: rgb(246, 253, 255);
+  background: radial-gradient(
+    circle,
+    rgba(246, 253, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 39%,
+    rgba(255, 252, 225, 1) 100%
+  );
+}
+
+.timezones__watch__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.timezones__watch__hour,
+.timezones__watch__minute,
+.timezones__watch__second {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.timezones__watch__hand {
+  position: absolute;
+}
+
+.timezones__watch__hour .timezones__watch__hand {
+  top: 20%;
+  right: 20%;
+  width: 30%;
+  height: 30%;
+  border-left: 4px solid #00424b;
+}
+
+.timezones__watch__minute .timezones__watch__hand {
+  position: absolute;
+  top: 7.5%;
+  right: 7.5%;
+  width: 42.5%;
+  height: 42.5%;
+  border-left: 2px solid #005c68;
+}
+
+.timezones__watch__second .timezones__watch__hand {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  width: 47.5%;
+  height: 47.5%;
+  border-left: 2px dashed #0093a7;
+}
